@@ -13,9 +13,12 @@ st.header("Effects of Oil Refineries in Your Area")
 st.subheader('Refineries in Texas')
 
 
+
+from pathlib import Path
+ 'your_file.csv'
 # get our data
-refineries = pd.read_csv('./datasets/refinery_coords.csv')
-tract_data = gpd.read_file('./cleaned_datasets/all_data_txshp/all_data_shape.shp')
+refineries = pd.read_csv(Path(__file__).parents[0] /'datasets/refinery_coords.csv')
+tract_data = gpd.read_file(Path(__file__).parents[0] /'cleaned_datasets/all_data_txshp/all_data_shape.shp')
 tract_data.drop(columns='geometry', inplace=True)
 
 st.map(refineries[['latitude', 'longitude']]) # display refineries on map
