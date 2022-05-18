@@ -34,7 +34,6 @@ ez-setup==0.9
 fastjsonschema==2.15.1
 Fiona==1.8.21
 fonttools==4.25.0
-GDAL==3.4.3
 geographiclib==1.52
 geopandas==0.6.2
 geopy==2.2.0
