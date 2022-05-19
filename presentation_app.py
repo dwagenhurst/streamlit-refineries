@@ -9,7 +9,6 @@ import numpy as np
 import geopy.distance
 
 st.title('DSI Group Project')
-st.header("Effects of Oil Refineries in Your Area")
 st.subheader('Refineries in Texas')
 
 
